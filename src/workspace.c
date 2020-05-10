@@ -25,14 +25,9 @@
 
 int workspace_count=0;
 
-
-workspace_t workspaces[WORKSPACE_NUMBER];
-
-
-
 void newWorkspace(char name[], long int x, long int y){
 	workspaces[workspace_count].id = workspace_count;
-	strcpy(workspaces[workspace_count].name, name);
+	strncpy(workspaces[workspace_count].name, name, 20);
 	workspaces[workspace_count].index = workspace_count;
 	workspaces[workspace_count].client_count = 0;
 	workspaces[workspace_count].frames[0] = newFrame(0,x,y,root_width,root_height);

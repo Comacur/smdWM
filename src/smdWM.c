@@ -9,12 +9,14 @@ void init(){
 	root_win	     = screen->root;
 	newWorkspace("1", 0, 0);
 	running = true;
+	mons[]     	     = monitor_t{0, 0, 1920, 1080, 0, 0};	
 }
+
+
 
 void readConfig();
 
 void handleEvents();
-
 
 
 
@@ -31,12 +33,10 @@ void handleEvents(){
 
 
 int spawnWindow(xcb_map_request_event_t *ev){
-	
 			
-	}
+	
 	return 0;
 }
-
 int main(){
 	init();
 	printf("x width  = %ld\n",root_width);	

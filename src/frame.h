@@ -23,6 +23,7 @@ typedef struct frame_t {
 	long int	width;
 	long int	height;
 	xcb_window_t	windows[20];
+	subframe_t	subframes[20];
 } frame_t;
 
 
