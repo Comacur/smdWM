@@ -1,0 +1,1 @@
+#define MAX_WORKSPACES 20
