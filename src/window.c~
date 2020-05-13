@@ -11,7 +11,7 @@ typedef struct window_t {
 	long int	y;
 	long int	width;
 	long int	height;
-	char		name[20];
+	char		*name[20];
 } window_t;
 
 

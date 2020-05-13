@@ -33,8 +33,8 @@ typedef struct frame_t {
 	long int	y;
 	long int	width;
 	long int	height;
-	xcb_window_t	window[20];
-	subframe_t	subframe[20];
+	xcb_window_t	windows[20];
+	subframe_t	subframes[20];
 } frame_t;
 
 subframe_t newSubframe(float percent_x, float percent_y, int index);

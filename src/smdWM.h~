@@ -35,7 +35,6 @@ xcb_connection_t 	*con;
 xcb_window_t		win;
 xcb_screen_t		*screen;
 xcb_generic_event_t	*Gevent;
-xcb_generic_error_t	*Gerr;
 workspace_t	 	workspaces[WORKSPACE_NUMBER];
 long int 		root_width;
 long int		root_height;
